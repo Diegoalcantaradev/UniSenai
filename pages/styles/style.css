@@ -1,0 +1,119 @@
+/* importação da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* redefinição das margens paddings e box */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* sessão de variaveis */
+:root{
+    --header-bg-color:#07038C;
+    --footer-bg-color:black;
+    --main-bg-color:white;
+    --Letter-color:white;
+    --form-bg-color:#D9D9D9;
+    --input-bg-color:#EBEBEB;
+    --button-bgYES-color:#C6E2B4;
+    --button-bgNO-color:#DF9D9D;
+}
+body {
+    background-color: var(--main-bg-color);
+    display: flexbox;
+}
+/* sessão estilo do cabeçalho */
+header {
+    background-color: var(--header-bg-color);
+    display: flex;
+    align-items: center;
+}
+h1{
+    padding: 1px 1px 1px 10px;
+    border: solid;
+    border: #07038C;
+    width: 300px;
+    margin: 0;
+}
+#styleLogo{
+    display: block;
+    margin-top: -23px;
+}
+#logo{
+   display: block; 
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+li a{
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+}
+li::marker{
+    color:white
+}
+/* sessão definir cor de fundo */
+main {
+    background-color: var(--main-bg-color);
+}
+/* index box de turmas */
+#mainIndex{
+    background-color: var(--form-bg-color);
+    width: 80%;
+    height: 700px;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    margin-top: 75px;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.452);
+}
+/* sessaõ estilo de rodapé */
+footer {
+    background-color: var(--footer-bg-color);
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 4px;  
+}
+/* sessão de fontes e estilos de fonte */
+.styleLetter{
+    color: var(--Letter-color);
+}
+.styleLetterFont{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.styleLetterFontBold{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+.styleLetterFontLight{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+}
+/* botão verde */
+.buttonYES {
+    background-color: var(--button-bgYES-color);
+    cursor: pointer;
+}
+/* sessão formulario cadastrado de turmas */
+form{
+    background-color: var(--form-bg-color);
+    width: 50%;
+    height: 700px;
+    position: relative;
+    top: 25%;
+    left: 25%;
+    margin-top: 75px;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.452);
+    display: flexbox;
+    text-align: center;
+}
